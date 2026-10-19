@@ -1,0 +1,264 @@
+/*updated pallette help from ChatGPT*/
+/* =====================================================================
+   Color Palette
+   Background: #1E2737
+   Surface:    #6c7fa0
+   Text:       #bdcad7
+   Primary:    #34557d
+   Accent:     #bda1c5
+   ===================================================================== */
+
+
+
+ /*ChatGPT assisted with Google font change*/
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+font-family: "Telex", sans-serif;
+  /*font color change to light blue*/
+  color: #bdcad7;
+  /*background color changed to light gray*/
+  background-color: #1E2737;}
+
+ 
+
+
+
+/*AI-assisted asset*/
+/* ---- HERO FROM FLEXBOX ASSIGNMENT ---- */
+/*ChatGPT help creating image prompts used Create the visual landing page mockup with the M monogram 
+and HTML code on a laptop*/
+
+.hero {
+
+  background-image: url("../images/workspacelanding.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  /*ChatGPT assistance with hero height adjustment*/
+  /* Hero size */
+  width: 100%;
+  min-height: 350px;
+  min-height: 70vh;
+
+  /* Center content using Flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Center text */
+  text-align: center;
+  padding: 40px 24px;
+}
+
+/* Hero heading */
+/*hero text color changed to light blue*/
+.hero h1 {
+  color: #bdcad7;
+}
+
+
+
+h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
+/*ChatGPT assistance in changing heading color for better visibility changed to light blue*/
+h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); color: #bdcad7; }
+p  { font-size: clamp(1rem, 1.2vw, 1.125rem); max-width: 65ch; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+.btn-primary {
+  display: inline-block;
+  /*button color changed to pink*/
+    background-color: #bda1c5;
+  
+  /*button text color change to gray*/
+  color: #3c4b67;
+
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*ChatGPT helped with making header sticky so it will continue
+to display if I scroll down on the page*/
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #34557d;
+}
+
+
+/* ---- HEADER (Flexbox) ---- */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 24px;
+}
+
+/*ChatGPT assistance with changing navigation link color*/
+
+/* ChatGPT help with navigation link to light blue color for better visibility 
+against dark blue back ground */
+#primary-nav a,
+.brand {
+    color: #a0b8d0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Navigation hover effect */
+/*changed navigation hover effect to red to show against white back page background*/
+#primary-nav a:hover,
+.brand:hover {
+    color: #a14040;
+}
+
+
+/* ---- ABOUT (Grid 2-column) ---- */
+.about {
+  display: grid;
+  /*changed grid-template from 7fr to 1fr per ChatGPT suggestion*/
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+@media (min-width: 768px) { .about { grid-template-columns: 2fr 1fr; } }
+
+/* ---- SKILLS (auto-fit Grid) ---- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+/* ---- PROJECTS (auto-fit Grid) ---- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/*cards from Playground*/
+/* Subtle card on dark background */
+.card {
+  padding: 28px;
+  border-radius: 14px;
+  background-color: #6c7fa0;
+  border: 1px solid rgba(158, 50, 50, 0.08);
+  transition: all .2s;
+}
+
+.card:hover {
+  border-color: rgba(236, 72, 153, .4);
+  transform: translateY(-3px);
+}
+
+
+
+/* Gradient tinted icon tile */
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(236,72,153,.2), rgba(59,130,246,.15));
+  color: #d14f90;
+
+
+/*ChatGPT help to center icons*/
+  /* Center icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ---- FOCUS-VISIBLE for accessibility ---- */
+:focus-visible {
+  outline: 3px solid #f0c419;
+  outline-offset: 3px;
+}
+
+/*ChatGPT help in having the hamburger display*/
+/* These lines make the three spans inside the menu button
+   look like a hamburger icon for mobile navigation. */
+.menu-toggle .bar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #2a2e4e;
+  margin: 4px 0;
+}
+
+
+/* ---- MOBILE NAV ---- */
+/*ChatGPT assistance with code for mobile nav to help with display flex*/
+.menu-toggle { display: none; }
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+
+  #primary-nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  max-width: 85vw;
+  background: #ffffff;
+  transform: translateX(100%);
+  transition: transform 0.28s ease;
+  flex-direction: column;
+  padding: 80px 24px;
+}
+  body.menu-open #primary-nav { transform: translateX(0); }
+}
+
+
+
+/*ChatGPT help in changing footer email link color to lighter blue for better
+visibility. It also solved space issue that provides extra space between cards and
+footer*/
+.site-footer {
+    padding: 30px 24px;
+    margin-top: 30px;
+}
+
+.site-footer a {
+    color: #bdcad7;
+}
+
+/*ChatGPT assistance in making card links easier to read changed color to light blue for better
+visibility*/
+.card a {
+  color: #96cde7;
+}
+
+/*moved section to bottom for reduced-motion visibility. This helps with ADA compliance 
+for people who have sensory disabilities*/
+
+/* ---- REDUCED MOTION ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

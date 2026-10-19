@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mary McCarthy — Web Designer</title>
+
+<!--To do Find new font Using google fonts to replace font-->
+  <!--Google  Font-->
+<!-- ChatGPT assistance with Google font instructions and placement -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Barriecito&family=Caveat+Brush&family=Creepster&family=Kablammo&family=Telex&display=swap" rel="stylesheet">
+
+
+<!--ChatGPT help when background color did not change when changing color-->
+ <link rel="stylesheet" href="css/mccarthy-midterm.css">
+
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">Mary McCarthy</a>
+
+      <button type="button" class="menu-toggle"
+              aria-expanded="false" aria-controls="primary-nav"
+              aria-label="Open menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <!--nav bar which becomes hamburger when page is made smaller-->
+      <nav id="primary-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main id="top">
+    <!-- AI-assisted asset -->
+     <!--Chat GPT help with creating hero image-->
+    <section class="hero">
+      <h1>Mary McCarthy</h1>
+      <p class="tagline">Junior web designer in Northern Virginia.</p>
+      <a href="#projects" class="btn-primary">View my work</a>
+    </section>
+
+
+    <section id="about" class="about">
+      <div><h2>About me</h2><p>Hello, Please feel free to look over my page. I am new to junior web design that
+        loves to combine her creativity to make unique webpages.
+        
+      </p></div>
+      <img src="images/mary.jpg" alt="Photo of Mary McCarthy">
+    </section>
+
+   <!--Skills listed in unordered list which shows list items with bullet points--> 
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-grid">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Digital Photography</li>
+        <li>Canva</li>
+        <li>Data Entry</li>
+        <li>Customer Service</li>
+        
+      </ul>
+    </section>
+
+
+<!--Skills Card section cards icons created with Flaticon attribution to creators-->
+<section id="projects">
+  <h2>Selected projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Card 1: HTML -->
+    <div class="card">
+      <div class="icon">
+        <img src="images/html-document.png" alt="HTML Icon">
+      </div>
+      <!-- Flaticon icon attributed to T Rex -->
+      <h3>HTML</h3>
+      <p>I use HTML to create pages.</p>
+    </div>
+
+    <!-- Card 2: CSS -->
+    <div class="card">
+      <div class="icon">
+        <img src="images/css.png" alt="CSS Icon">
+      </div>
+      <!-- Flaticon icon attributed to Eucalyp -->
+      <h3>CSS</h3>
+      <p>I use CSS to create interesting designs.</p>
+    </div>
+
+    <!-- Card 3: Digital Photography -->
+    <div class="card">
+      <div class="icon">
+        <img src="images/camera.png"
+             alt="Photography Icon">
+      </div>
+      <!-- Flaticon icon attributed to Magnificent -->
+      <h3>Digital Photography</h3>
+  
+      <p>I enjoy using original photography to
+         personalize website designs.</p>
+    </div>
+
+    <!-- Card 4: Canva -->
+    <div class="card">
+      <div class="icon">
+        <img src="images/digital-art.png" alt="Digital art using Canva">
+      </div>
+         <!-- Flaticon icon attributed to Canticons -->
+      <h3>Canva</h3>
+      <p>I use Canva to create creative designs
+         and graphics.</p>
+    </div>
+
+    <!-- Card 5: Customer Service -->
+    <div class="card">
+      <div class="icon">
+       <img src="images/customer-service.png"
+     alt="Customer Service Icon"> 
+      </div>
+         <!-- Flaticon icon attributed to Canticons -->
+      <h3>Customer Satisfaction</h3>
+      <p>Providing ongoing support during and after project completion is important.</p>
+    </div>
+
+    <!-- Card 6: GitHub -->
+    <div class="card">
+      <div class="icon">
+        <img src="images/cat.png"
+             alt="Github">
+      </div>
+      <h3>GitHub</h3>
+      <p>Experienced with using Github.</p>
+    </div>
+
+    
+ <!--Project cards-->
+ <!--Icons for project section were created using ChatGPT after I creating skills icons and went past limit for free access to Flaticon-->
+ 
+
+
+<!-- Project Card 1: Flexbox -->
+    <div class="card">
+      <div class="icon">
+        <!--ChatGPT. help with flexbox icon-->
+        <img src="images/flexbox.png"
+             alt="Flexbox">   
+      </div>
+      <h3>Flexbox</h3>
+      <p>We learned how to create flexbox which allows a responsive design for different parts of the page</p>
+      <!--ChatGPT assistance on adding link to card-->
+      <a href="https://maryagnesmccarthy1.github.io/mccarthy_flexbox/">View Flexbox Project</a>
+      <!--Icon for Flexbox created using ChatGPT-->
+    </div>
+
+
+
+<!-- Project Card 2: Responsive Images + Responsive Video -->
+    <div class="card">
+      <div class="icon">
+        <img src="images/videocamera.png"
+             alt="Responsive Images + Responsive Video">
+      </div>
+      <h3>Responsive Images + Responsive Video</h3>
+      <p>We learned how to add images and video that would be viewable 
+        on different devices.</p>
+         <a href="https://maryagnesmccarthy1.github.io/rwd2_mccarthy//">View Responsive Images + Responsive Video Project</a>
+          <!--Icon for Flexbox created using ChatGPT-->
+    </div>
+
+
+
+
+<!-- Project Card 3: Responsive Web Design - Typography< -->
+    <div class="card">
+      <div class="icon">
+        <img src="images/typography.png"
+             alt="Clamp Typography">
+      </div>
+      <h3>Responsive Web Design - Typography</h3>
+      <p>We learned to work with clamp code to help with typography </p>
+<a href="https://maryagnesmccarthy1.github.io/rwd3_mccarthy/">Responsive Web Design - Typography Project</a>
+ <!--Icon for Flexbox created using ChatGPT-->
+    </div>
+
+
+
+</div> <!-- Closes projects-grid -->
+</section> <!-- Closes Projects section -->
+</main> <!-- Closes main -->
+
+<!-- ChatGPT help with footer -->
+<footer id="contact" class="site-footer">
+
+
+
+
+    <p>&copy; 2026 Mary McCarthy · 
+      <a href="mailto:mmazujian0001@email.vccs.edu">mmazujian0001@email.vccs.edu</a>
+    </p>
+
+    <!--ChatGPT assistance with adding info for social media -->
+<a href="#">LinkedIn</a>
+<a href="#">GitHub</a>
+
+
+    <p class="ai-disclosure">
+      <!--AI disclosure-->
+      AI Disclosure: ChatGPT help with some code and suggestions. Hero illustration generated with ChatGPT.
+    </p>
+  </footer>
+  
+  <!--ChatGPT help with Java Script for drawer which helps open the navigation drawer. This allows hamburger to
+  access the other pages-->
+<script>
+  const btn = document.querySelector(".menu-toggle");
+
+  // setOpen controls the mobile menu (WHAT IT IS).
+  // It adds or removes the menu-open class to show or hide
+  // the navigation drawer (WHAT IT DOES).
+  // aria-expanded tells screen readers if the menu is open
+  // or closed (WHAT IT MEANS).
+  function setOpen(open) {
+    document.body.classList.toggle('menu-open', open);
+    btn.setAttribute('aria-expanded', String(open));
+  }
+
+btn.addEventListener("click", function() {
+  const isOpen = document.body.classList.contains("menu-open");
+  setOpen(!isOpen);
+});
+
+//ChatGPT 
+//ChatGPT help with escape key which will listen to when a keyboard key is clicked and if escape key
+// is pressed it will close the mobile menu
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    setOpen(false);
+  }
+});
+</script>
+</body>
+</html>
+
+
+
+
